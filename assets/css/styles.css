@@ -6,10 +6,10 @@
   --bold-font       : 700;
   --bolder-font     : 900;
   --bg-color        : #fcfcfc;
-  --primary-color   : #3d9c42;
-  --secondary-color : #eb7430;
-  --primary-shadow  : #1a3821;
-  --secondary-shadow: #503d35;
+  --primary-color   : #030303;
+  --secondary-color : #515151;
+  --primary-shadow  : #737373;
+  --secondary-shadow: #b1b1b1;
   --bottom-margin   : 0.5rem;
   --bottom-margin-2 : 1rem;
   --line-height     : 1.7rem;
@@ -56,24 +56,47 @@ nav {
   box-shadow      : 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav h1 {
-  color: var(--primary-color);
-}
-
 nav a {
-  color     : var(--primary-color);
-  transition: var(--transition);
+  color      : var(--primary-color);
+  transition : var(--transition);
+  align-items: center;
 }
 
 nav ul {
   display: flex;
-  gap    : 1.9rem;
-
 }
 
-nav ul li {
-  font-weight: var(--bold-font);
+.navigation {
+  display: flex;
+  margin : 0;
 }
+
+.second-button {
+  display: none;
+}
+
+.navbar-toggler {
+  height: px;
+  width : 50px;
+  border: none;
+  margin: 0;
+}
+
+button:focus {
+  outline: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .second-button {
+    display: block;
+  }
+}
+
+/* animated hamburger-menu section */
 
 .animated-icon1,
 .animated-icon2,
@@ -154,14 +177,4 @@ nav ul li {
   top  : 11px;
   width: 0%;
   left : 50%;
-}
-
-.navbar-toggler {
-  height: 50px;
-  width : 50px;
-  border: none;
-}
-
-button:focus {
-  outline: transparent;
 }
