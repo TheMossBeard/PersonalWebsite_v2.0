@@ -5,8 +5,8 @@
   --normal-font     : 400;
   --bold-font       : 700;
   --bolder-font     : 900;
-  --bg-color        : #fcfcfc;
-  --primary-color   : #030303;
+  --bg-color        : #030303;
+  --primary-color   : #ffffff;
   --secondary-color : #515151;
   --primary-shadow  : #737373;
   --secondary-shadow: #b1b1b1;
@@ -90,10 +90,20 @@ button:focus {
   .navigation {
     display: none;
   }
-
   .second-button {
     display: block;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .collapse.navbar-collapse {
+    display: none;
+  }
+  /* hide collapse/open class on resize */
+}
+
+.active {
+  font-weight: bold;
 }
 
 /* animated hamburger-menu section */
@@ -137,7 +147,7 @@ button:focus {
 }
 
 .animated-icon2 span {
-  background: #141310;
+  background: var(--primary-color);
 }
 
 .animated-icon2 span:nth-child(1) {
