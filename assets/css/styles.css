@@ -5,9 +5,9 @@
   --normal-font     : 400;
   --bold-font       : 700;
   --bolder-font     : 900;
-  --bg-color        : #030303;
+  --bg-color        : #000000;
   --primary-color   : #ffffff;
-  --secondary-color : #515151;
+  --secondary-color : #6b6b6b;
   --primary-shadow  : #737373;
   --secondary-shadow: #b1b1b1;
   --bottom-margin   : 0.5rem;
@@ -28,13 +28,16 @@ a:hover {
   color: var(--secondary-color);
 }
 
+button {
+  outline: none;
+}
+
 a {
   text-decoration: none;
   color          : var(--primary-color);
 }
 
-body {
-  
+body {  
   background-color: #cccccc;
 }
 
@@ -75,10 +78,6 @@ footer {
   background-color: var(--bg-color);
 }
 
-button:focus {
-  outline: transparent;
-}
-
 @media only screen and (max-width: 768px) {
   .navigation {
     display: none;
@@ -89,15 +88,12 @@ button:focus {
 }
 
 .active {
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: large;
 }
 
 .page-content {
   padding-top: 75px;
-}
-
-.page-footer {
-  background-color: #302f2f;
 }
 
 /* animated hamburger-menu section */
