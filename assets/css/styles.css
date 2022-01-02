@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 :root {
-  --font-family     : "Roboto", sans-serf;
+  
   --normal-font     : 400;
   --bold-font       : 700;
   --bolder-font     : 900;
@@ -16,14 +16,8 @@
   --transition      : 0.3s;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
-  margin    : 0;
-  padding   : 0;
-  box-sizing: border-box;
+  margin: 0;
 }
 
 ul {
@@ -40,20 +34,17 @@ a {
 }
 
 body {
-  font-family: var(--font-family);
+  
+  background-color: #cccccc;
 }
 
 nav {
-  position        : sticky;
-  top             : 0;
-  left            : 0;
-  z-index         : 1;
   display         : flex;
   align-items     : center;
   justify-content : space-between;
   padding         : 1.5rem 1rem;
   background-color: var(--bg-color);
-  box-shadow      : 0 3px 5px rgba(0, 0, 0, 0.1);
+ 
 }
 
 nav a {
@@ -66,8 +57,7 @@ nav ul {
   display: flex;
 }
 
-.navigation {
-  display: flex;
+.navigation { 
   margin : 0;
 }
 
@@ -79,6 +69,10 @@ nav ul {
   width : 50px;
   border: none;
   margin: 0;
+}
+
+footer {
+  background-color: var(--bg-color);
 }
 
 button:focus {
@@ -96,6 +90,14 @@ button:focus {
 
 .active {
   font-weight: bold;
+}
+
+.page-content {
+  padding-top: 75px;
+}
+
+.page-footer {
+  background-color: #302f2f;
 }
 
 /* animated hamburger-menu section */
