@@ -76,7 +76,6 @@ nav ul {
 }
 
 .navbar-toggler {
-  height: px;
   width : 50px;
   border: none;
   margin: 0;
@@ -93,13 +92,6 @@ button:focus {
   .second-button {
     display: block;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .collapse.navbar-collapse {
-    display: none;
-  }
-  /* hide collapse/open class on resize */
 }
 
 .active {
