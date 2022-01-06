@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 :root {
-  
+
   --normal-font     : 400;
   --bold-font       : 700;
   --bolder-font     : 900;
@@ -14,6 +14,11 @@
   --bottom-margin-2 : 1rem;
   --line-height     : 1.7rem;
   --transition      : 0.3s;
+}
+
+.page-content {
+  padding-top        : 75px;
+
 }
 
 * {
@@ -37,8 +42,10 @@ a {
   color          : var(--primary-color);
 }
 
-body {  
-  background-color: #cccccc;
+html,
+body {
+  height  : 100%;
+  background-color: rgb(88, 110, 127);
 }
 
 nav {
@@ -47,7 +54,7 @@ nav {
   justify-content : space-between;
   padding         : 1.5rem 1rem;
   background-color: var(--bg-color);
- 
+  opacity         : 75%;
 }
 
 nav a {
@@ -60,8 +67,8 @@ nav ul {
   display: flex;
 }
 
-.navigation { 
-  margin : 0;
+.navigation {
+  margin: 0;
 }
 
 .second-button {
@@ -76,12 +83,15 @@ nav ul {
 
 footer {
   background-color: var(--bg-color);
+  opacity         : 75%;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
   .navigation {
     display: none;
   }
+
   .second-button {
     display: block;
   }
@@ -89,11 +99,7 @@ footer {
 
 .active {
   font-weight: bolder;
-  font-size: large;
-}
-
-.page-content {
-  padding-top: 75px;
+  font-size  : large;
 }
 
 /* animated hamburger-menu section */
