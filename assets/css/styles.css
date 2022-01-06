@@ -45,7 +45,7 @@ a {
 html,
 body {
   height  : 100%;
-  background-color: rgb(88, 110, 127);
+  background-color: rgb(255, 255, 255);
 }
 
 nav {
@@ -100,6 +100,14 @@ footer {
 .active {
   font-weight: bolder;
   font-size  : large;
+}
+
+canvas#canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: blur(3px);
 }
 
 /* animated hamburger-menu section */
