@@ -17,8 +17,12 @@
 }
 
 .page-content {
-  padding-top        : 75px;
-
+  padding-top    : 75px;
+  align-items    : center;
+  display        : flex;
+  min-height     : 100vh;
+  flex-direction : column;
+  justify-content: space-between;
 }
 
 * {
@@ -42,10 +46,10 @@ a {
   color          : var(--primary-color);
 }
 
-html,
-body {
-  height  : 100%;
+body,
+html {
   background-color: rgb(255, 255, 255);
+  height          : 100%;
 }
 
 nav {
@@ -54,7 +58,6 @@ nav {
   justify-content : space-between;
   padding         : 1.5rem 1rem;
   background-color: var(--bg-color);
-  opacity         : 75%;
 }
 
 nav a {
@@ -83,8 +86,7 @@ nav ul {
 
 footer {
   background-color: var(--bg-color);
-  opacity         : 75%;
-  bottom: 0;
+  min-width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -102,16 +104,36 @@ footer {
   font-size  : large;
 }
 
-canvas#canvas {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  filter: blur(3px);
+#intro-div {
+  border: black;
+
+}
+
+form {
+  padding-left  : 10%;
+  padding-right : 10%;
+  padding-bottom: 10%;
+}
+
+/* scrollbar css */
+::-webkit-scrollbar {
+  width        : 10px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* animated hamburger-menu section */
-
 .animated-icon1,
 .animated-icon2,
 .animated-icon3 {

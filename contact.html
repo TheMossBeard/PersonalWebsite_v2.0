@@ -17,7 +17,6 @@
 </head>
 
 <body class="bg">
-  <canvas id="canvas"></canvas>
   <nav class="navbar navbar-default fixed-top">
     <a class="navbar-brand" href="index.html">Mossbeard Studio</a>
     <ul class="navigation">
@@ -47,23 +46,48 @@
   </nav>
 
   <section class="page-content">
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
-    <h1>Contact</h1>
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+    <p class="text-center w-responsive mx-auto mb-5">Have a question? Please use this form to contact me.</p>
+    <div class="col-md-12 mb-md-0 mb-5">
+      <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" id="name" name="name" class="form-control">
+              <label for="name" class="">Your name</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" id="email" name="email" class="form-control">
+              <label for="email" class="">Your email</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="md-form mb-0">
+              <input type="text" id="subject" name="subject" class="form-control">
+              <label for="subject" class="">Subject</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="md-form">
+              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+              <label for="message">Your message</label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="text-center text-md-center">
+        <button class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</button>
+      </div>
+      <div class="status"></div>
+    </div>
+
     <footer class="text-center text-white">
       <div class="text-center p-3">
         <a class="button btn-floating m-3" href="https://twitter.com/beard_moss" role="button"><i
