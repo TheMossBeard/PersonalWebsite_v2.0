@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     type="text/css">
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/theme.css" type="text/css" />
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -48,42 +49,43 @@
   <section class="page-content">
 
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
-    <p class="text-center w-responsive mx-auto mb-5">Have a question? Please use this form to contact me.</p>
+    <p class="text-center w-responsive mx-auto mb-5">Have a question? Contact me on 
+      <a href="https://www.linkedin.com/in/jesse-whiting-388776215/" style="color: black;">linkedin</a><br></br> or use the form below.</p>
     <div class="col-md-12 mb-md-0 mb-5">
       <form id="contact-form" name="contact-form" action="mail.php" method="POST">
         <div class="row">
           <div class="col-md-6">
             <div class="md-form mb-0">
+              <label for="name" class="">Name</label>
               <input type="text" id="name" name="name" class="form-control">
-              <label for="name" class="">Your name</label>
             </div>
           </div>
           <div class="col-md-6">
             <div class="md-form mb-0">
+              <label for="email" class="">Email</label>
               <input type="text" id="email" name="email" class="form-control">
-              <label for="email" class="">Your email</label>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <div class="md-form mb-0">
-              <input type="text" id="subject" name="subject" class="form-control">
               <label for="subject" class="">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <div class="md-form">
+              <label for="message">Message</label>
               <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-              <label for="message">Your message</label>
             </div>
           </div>
         </div>
       </form>
       <div class="text-center text-md-center">
-        <button class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</button>
+        <button class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</button>
       </div>
       <div class="status"></div>
     </div>
