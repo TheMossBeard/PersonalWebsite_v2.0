@@ -95,6 +95,10 @@ form {
   margin-bottom: 10px
 }
 
+.text-center.text-md-center {
+  padding-bottom: 32px;
+}
+
 /* scrollbar css */
 ::-webkit-scrollbar {
   width        : 10px;
