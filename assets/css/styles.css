@@ -99,6 +99,23 @@ form {
   padding-bottom: 32px;
 }
 
+.resume-div {
+  max-width: 80%;
+}
+
+.resume-sub {
+  line-height: 1;
+  font-size: 16;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
 /* scrollbar css */
 ::-webkit-scrollbar {
   width        : 10px;
