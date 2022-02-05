@@ -73,6 +73,7 @@ footer {
   .second-button {
     display: block;
   }
+
 }
 
 .active {
@@ -100,7 +101,24 @@ form {
 }
 
 .resume-div {
-  max-width: 80%;
+  max-width: 60%;
+}
+
+.home-div {
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+}
+
+img {
+  margin: 25px;
+  border-radius: 50%;
+  max-width: 25%;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.intro-div {
+  text-align: center;
 }
 
 .resume-sub {
